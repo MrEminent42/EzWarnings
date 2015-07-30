@@ -1,0 +1,32 @@
+warnings:
+  others:
+    actions: 
+    - '[warnbroadcast] {player}'
+  '3': 
+    final: true
+    actions: 
+    - '[punish] {player}'
+
+punishments:
+  others:
+    actions: 
+    - '[consolecmd] mute {player} 10m'
+    - '[msg] &cYou were warned 3 times, so you are now muted for 10 minutes.'
+  '3': 
+    final: true
+    actions: 
+    - '[consolecmd] ban {player} You have been punished 3 times!'
+
+warning-types:
+- swearing
+- caps
+- offense
+- DDoSThreats
+- racisim
+- abuse
+
+log-to-console: true
+
+options:
+  auto-update: true
+

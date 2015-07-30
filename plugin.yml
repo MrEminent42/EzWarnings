@@ -1,0 +1,37 @@
+name: EzWarnings
+authors: [MrEminent42]
+version: 2.3
+description: /warn people with ease!
+main: me.MrEminent42.ezwarnings.EzWarnings
+softdepend: [CS-CoreLib]
+
+commands:
+  warn:
+    usage: /warn <player> <reason>
+    description: /warn players
+  warnings:
+    usage: /warnings [player]
+    description: see you or others warnings
+    aliases: [punishments]
+  setwarnings:
+    usage: /<command> <player>
+    description: set someones warnings!
+    aliases: [resetwarnings, setw]
+  setpunishments:
+    usage: /<command> <player>
+    description: set someones punishments
+    aliases: [resetwarnings, setp]
+  
+permissions:
+  warnings.warn:
+    default: op
+    description: use /warn
+  warnings.view:
+    default: op
+    description: see your warnings and punishments
+  warnings.view.others:
+    default: op
+    description: see others warnings and punishments
+  warnings.reset.warnings:
+    default: op
+    description: use /resetwarnings
