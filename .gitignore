@@ -1,3 +1,9 @@
+# Eclipse stuff
+/.classpath
+/.project
+/.settings
+/bin
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
